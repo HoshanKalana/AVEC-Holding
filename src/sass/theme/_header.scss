@@ -1,0 +1,177 @@
+.site-main {
+    .main-header {
+        width: 100%;
+        z-index: 1000;
+        // position: absolute;
+        background-color: #F8F3F0;
+
+        .inner {
+            // position: absolute;
+            position: relative;
+            z-index: 1000;
+            width: 100%;
+            padding: 0px 0px;
+            background-color: #F8F3F0;
+            // -webkit-transition: background-color 2s ease;
+            // -moz-transition: background-color 2s ease;
+            // -o-transition: background-color 2s ease;
+            // transition: background-color 2s ease;
+
+
+            .top-bar {
+                background-color: $color-1;
+                font-family: $font-1;
+                font-size: 12px;
+                font-weight: 400;
+                color: $color-5;
+                text-transform: uppercase;
+
+                span {
+                    letter-spacing: 0.8px;
+                }
+
+                .topbar-center {
+                    text-align: center;
+                }
+
+                .topbar-right {
+                    text-align: end;
+
+                    span {
+                        padding: 0 5px;
+
+                        &:last-child {
+                            padding-right: 0px;
+                        }
+
+                        a {
+                            font-family: $font-1;
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: $color-5;
+                            text-transform: uppercase;
+                            text-decoration: none;
+
+                            i {
+                                font-family: $font-1;
+                                font-size: 20px;
+                                font-weight: 400;
+                                color: $color-5;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .navbar {
+                -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+                box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+                .nav-item {
+                    .nav-link {
+                        font-family: $font-2;
+                        color: $color-6;
+                        font-size: 14px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        letter-spacing: 0.8px;
+                        padding-right: 10px;
+                        padding-left: 10px;
+                        transition: all .3s ease;
+
+                        @media (max-width: 1199.98px) {
+                            font-size: 15px;
+                            letter-spacing: 0.8px;
+                            padding-right: 10px;
+                            padding-left: 10px;
+                        }
+
+                        &:hover {
+                            color: $color-4;
+                        }
+                    }
+                }
+
+                .user-account {
+                    display: flex;
+                    align-items: center;
+                    padding-right: 20px;
+
+                    p {
+                        margin-bottom: 0px;
+
+                        a {
+                            font-family: $font-1;
+                            color: $color-6;
+                            font-size: 15px;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            text-decoration: none;
+                            padding: 0 5px;
+                        }
+                    }
+
+                    .icon {
+                        i {
+                            color: $color-6;
+                            font-size: 25px;
+                        }
+                    }
+                }
+
+                .minicart {
+
+                    .dropdown {
+
+                        a {
+                            text-decoration: none;
+
+                            i {
+                                color: $color-6;
+                                font-size: 25px;
+                            }
+
+                            sup {
+                                top: -25px;
+                                left: -10px;
+
+                                span {
+                                    background-color: $color-8;
+                                    padding: 1px 6px;
+                                    border-radius: 10px;
+                                    font-family: $font-1;
+                                    font-size: 12px;
+                                    font-weight: 600;
+                                    color: $color-5;
+                                }
+                            }
+                        }
+
+                        .dropdown-menu {
+                            left: unset;
+                            right: 0;
+                        }
+                    }
+
+                }
+            }
+
+            &.affix {
+                z-index: 1000;
+                position: fixed;
+                min-height: 80px;
+                padding: 0px 0px 5px 0px;
+                background: #303030 !important;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+                .navbar {
+                    padding-top: 15px !important;
+                    padding-bottom: 15px !important;
+                }
+            }
+
+        }
+    }
+}
